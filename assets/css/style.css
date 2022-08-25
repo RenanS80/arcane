@@ -1,19 +1,208 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
 
 :root {
-    --white: #F9F9F9;
-    --white-200: #E3D2BC;
-    --gray: #585858;
-    --black: #161616;
+  --white: #F9F9F9;
+  --white-200: #E3D2BC;
+  --gray: #585858;
+  --black: #161616;
 
-    font-size: 62.5%;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-size: 1.6rem;
-    font-family: "Sora", sans-serif;
-  }
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+
+.container {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+/* --- HEADER --- */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 1.5rem;
+}
+
+header a:hover {
+  opacity: 0.85;
+}
+
+.header__devs {
+  display: flex;
+  gap: 12rem;
+}
+
+.header__riot a,
+.header__lol a,
+.header__netflix a {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+.header__riot {
+  position: relative;
+}
+
+.header__riot::after {
+  content: '';
+  width: 0.2rem;
+  height: 4.3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 6rem;
+  background-color: var(--white);
+}
+
+/* --- HEADER --- */
+main {
+  height: calc(100vh - 11.3rem);
+}
+
+main .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailer__btn {
+  width: 40rem;
+  height: 8rem;
+  display: inline-block;
+  position: relative;
+  margin-top: 3.2rem;
+  background: var(--black);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+  -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+}
+
+/* Borda no botão */
+.trailer__btn a {
+  width: 39.6rem;
+  height: 7.6rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  padding: 2.5rem 7rem;
+  background-color: var(--white-200);
+  color: var(--black);
+  font-weight: 600;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+  -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+}
+
+.trailer__btn a:hover {
+  opacity: 0.85;
+}
+
+.episodes__background {
+  width: 75vw;
+  height: 11.1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--white-200);
+  border-radius: 0 0 0 2.4rem;
+  opacity: 0.2;
+}
+
+.episodes__btn {
+  position: relative;
+  margin: 7rem 18rem 0 0;
+}
+
+.episodes__btn a:hover .episodes__btn-image {
+  width: 24rem;
+  height: 15rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/cover.png');
+  position: absolute;
+  left: -7rem;
+}
+
+.episodes__btn a {
+  width: 72.4rem;
+  height: 18.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-200);
+  color: var(--black);
+  font-weight: 600;
+  font-size: 2.3rem;
+  border: 0.2rem solid var(--black);
+  transition: all .2s ease;
+}
+
+.episodes__btn-image {
+  width: 23rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/images/cover.png');
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: -6rem;
+  z-index: 999;
+}
+
+.episodes__btn-image img {
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease;
+}
+
+.episodes__btn-info {
+  margin-left: 10rem;
+}
+
+.episodes__btn-info p {
+  margin-top: 2.1rem;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}

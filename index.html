@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/svg-inject.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Arcane</title>
 </head>
+
 <body>
-    
+
+    <!-- --- HEADER --- -->
+    <header>
+        <div class="container">
+            <div class="header__devs">
+                <div class="header__riot">
+                    <a href="https://www.riotgames.com/pt-br" target="_blank">
+                        <img src="/assets/images/riot-games.svg" alt="Riot Games" onLoad="SVGInject(this)">
+                    </a>
+                </div>
+                <div class="header__lol">
+                    <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">
+                        <img src="/assets/images/league-of-legends.svg" alt="League of Legends"
+                            onLoad="SVGInject(this)">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__netflix">
+                <a href="https://www.netflix.com/br/" target="_blank">
+                    <img src="/assets/images/netflix.svg" alt="Netflix" onLoad="SVGInject(this)">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- MAIN --- -->
+    <main>
+        <div class="container">
+            <section class="trailer">
+                <div class="trailer__image">
+                    <img src="/assets/images/arcane.png" alt="Arcane">
+                </div>
+
+                <div class="trailer__btn">
+                    <a href="https://www.youtube.com/watch?v=3MB3OK3Xnvs" target="_blank" role="button">Assista ao
+                        trailer</a>
+                </div>
+            </section>
+        
+            <section class="episodes">
+                <div class="episodes__background"></div>
+                <div class="episodes__btn">
+                    <a href="https://www.youtube.com/watch?v=3MB3OK3Xnvs" target="_blank" role="button">
+                        <div class="episodes__btn-image">
+                            <div>
+                                <img src="/assets/images/play.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="episodes__btn-info">
+                            <h1>Assista a novos episódios</h1>
+                            <p>13 de novembro, 2021</p>
+                        </div>
+                    </a>
+                </div>
+            </section> 
+        </div>
+    </main>
 </body>
+
 </html>
