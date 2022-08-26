@@ -21,7 +21,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/background.svg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/background.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,7 +159,7 @@ main .container {
 .episodes__btn a:hover .episodes__btn-image {
   width: 24rem;
   height: 15rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/cover.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/cover.png');
   position: absolute;
   left: -7rem;
 }
@@ -184,7 +184,7 @@ main .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/assets/images/cover.png');
+  background-image: url('../images/cover.png');
   background-position: center center;
   background-size: cover;
   position: absolute;
