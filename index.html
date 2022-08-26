@@ -19,20 +19,28 @@
             <div class="header__devs">
                 <div class="header__riot">
                     <a href="https://www.riotgames.com/pt-br" target="_blank">
-                        <img src="/assets/images/riot-games.svg" alt="Riot Games" onLoad="SVGInject(this)">
+                        <picture>
+                            <source srcset="/assets/images/riot-games.svg" media="(min-width: 500px)">
+                            <img src="/assets/images/riot-games-mobile.svg" alt="Riot Games">
+                        </picture>
                     </a>
                 </div>
                 <div class="header__lol">
                     <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">
-                        <img src="/assets/images/league-of-legends.svg" alt="League of Legends"
-                            onLoad="SVGInject(this)">
+                        <picture>
+                            <source srcset="/assets/images/league-of-legends.svg" media="(min-width: 500px)">
+                            <img src="/assets/images/league-of-legends-mobile.svg" alt="Riot Games">
+                        </picture>
                     </a>
                 </div>
             </div>
 
             <div class="header__netflix">
                 <a href="https://www.netflix.com/br/" target="_blank">
-                    <img src="/assets/images/netflix.svg" alt="Netflix" onLoad="SVGInject(this)">
+                    <picture>
+                        <source srcset="/assets/images/netflix.svg" media="(min-width: 500px)">
+                        <img src="/assets/images/netflix-mobile.svg" alt="Riot Games">
+                    </picture>
                 </a>
             </div>
         </div>
@@ -51,7 +59,7 @@
                         trailer</a>
                 </div>
             </section>
-        
+
             <section class="episodes">
                 <div class="episodes__background"></div>
                 <div class="episodes__btn">
@@ -63,12 +71,12 @@
                         </div>
 
                         <div class="episodes__btn-info">
-                            <h1>Assista a novos episódios</h1>
+                            <h1>Assista aos novos episódios</h1>
                             <p>13 de novembro, 2021</p>
                         </div>
                     </a>
                 </div>
-            </section> 
+            </section>
         </div>
     </main>
 </body>

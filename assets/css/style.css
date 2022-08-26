@@ -20,10 +20,11 @@ html {
 }
 
 body {
+  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/background.svg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
@@ -59,6 +60,8 @@ header a:hover {
 
 .header__devs {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 12rem;
 }
 
@@ -205,4 +208,124 @@ main .container {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
+}
+
+
+/* --- Media Queries --- */
+@media screen and (max-width: 1160px) {
+  .episodes__btn {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .episodes__btn a {
+    width: 54.3rem;
+  }
+
+  .episodes__btn-image {
+    width: 17.25rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .episodes__btn a {
+    width: 35.05rem;
+  }
+
+  .episodes__btn-info p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  .episodes__btn-image {
+    width: 14.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .header__riot a,
+  .header__lol a,
+  .header__netflix a {
+    padding: 0;
+  }
+
+  .header__riot::after {
+    display: none;
+  }
+
+  .header__devs {
+    gap: 8rem;
+  }
+
+  header .container {
+    padding: 3.3rem 1.5rem;
+  }
+
+  .trailer__image {
+    width: 30rem;
+  }
+
+  .trailer__image img {
+    width: 100%;
+  }
+
+  .trailer__btn {
+    width: 31.2rem;
+    height: 6rem;
+  }
+
+  /* Borda no botão */
+  .trailer__btn a {
+    width: 30.8rem;
+    height: 5.6rem;
+    padding: 2.2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__devs {
+    gap: 4rem;
+  }
+
+  .episodes {
+    align-self: flex-end;
+  }
+
+  .episodes__btn-info {
+    text-align: right;
+    padding-right: 2.5rem;
+  }
+
+  .episodes__btn a {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .episodes__btn-image {
+    top: -12rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .episodes__btn-info {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .episodes {
+    align-self: center;
+  }
 }
